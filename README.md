@@ -3,4 +3,3 @@
 * Here is item 1
 * Here is item 2
 * Here is item 3
-* Here is item 4
