@@ -1,0 +1,56 @@
+/*
+	Starter styles (do not edit)
+*/
+
+body {
+	margin: 0;
+	padding: 40px;
+	background-color: #EFEFEF;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+}
+
+h2 {
+	margin-top: 0px;
+}
+
+.portfolio-item {
+	float: left;
+	margin: 10px;
+}
+
+.front, .back {
+	background: #CCC;
+	border-radius: 10px;
+	transition: 2s;
+	transition-property: opacity,-webkit-transform;
+	transition-duration: 0s, 2s;
+	transition-delay: .6s, 0s;
+	
+}
+
+.front {
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	z-index: 1;
+}
+
+.back {
+	padding: 20px;
+	width: 160px;
+	height: 160px;
+	/*position: absolute;*/
+	z-index: 2;
+	-webkit-transform: rotateY(-180deg);
+}
+.portfolio-item:hover .front {
+	opacity:0;
+	-webkit-transform: rotateY(180deg);
+}
+
+.portfolio-item:hover .back {
+	-webkit-transform: rotateY(0deg);
+}
+
